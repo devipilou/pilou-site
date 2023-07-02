@@ -5,7 +5,7 @@ import HeaderContent from './HeaderContent.vue'
 
 <template>
     <header>
-        <RouterLink to="/">
+        <RouterLink to="/" class="logo-wrapper">
             <img alt="Pilou Dev logo" class="logo" src="@/assets/LogoPilouDev.png" width="150" height="150" />
         </RouterLink>
         <div class="wrapper">
@@ -27,6 +27,10 @@ header {
     line-height: 1.5;
     max-height: 100vh;
     min-width: 40rem;
+}
+
+.logo-wrapper {
+    border-radius: 0.5rem;
 }
 
 .logo {
