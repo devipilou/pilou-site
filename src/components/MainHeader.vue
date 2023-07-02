@@ -6,7 +6,7 @@ import HeaderContent from './HeaderContent.vue'
 <template>
     <header>
         <RouterLink to="/" class="logo-wrapper">
-            <img alt="Pilou Dev logo" class="logo" src="@/assets/LogoPilouDev.png" width="150" height="150" />
+            <img alt="Pilou Dev logo" class="logo" src="@/assets/LogoPilouDev.png" width="200" height="200" />
         </RouterLink>
         <div class="wrapper">
             <HeaderContent />
@@ -24,9 +24,12 @@ import HeaderContent from './HeaderContent.vue'
 
 <style scoped>
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     line-height: 1.5;
     max-height: 100vh;
-    min-width: 40rem;
+    min-width: 30rem;
 }
 
 .logo-wrapper {
@@ -67,8 +70,9 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
     header {
         display: flex;
-        place-items: center;
-
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .logo {
@@ -77,13 +81,14 @@ nav a:first-of-type {
 
     header .wrapper {
         display: flex;
-        /* place-items: flex-start; */
+        flex-direction: column;
         flex-wrap: wrap;
     }
 
     nav {
+        width: auto;
         text-align: left;
-        margin-left: -1rem;
+        /* margin-left: -1rem; */
         font-size: 1rem;
 
         padding: 1rem 0;
