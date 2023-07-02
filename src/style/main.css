@@ -38,13 +38,27 @@ a,
   transition: 0.3s;
 }
 
+button {
+  min-height: 50px;
+  border: solid 1px var(--color-border);
+  border-radius: 0.5rem;
+  color: var(--primary);
+  background-color: var(--color-background);
+  cursor: pointer;
+}
+
 @media (hover: hover) {
-  a:hover {
+  a:hover:not(has(button)) {
     background-color: var(--bg-primary);
   }
+
   .icon:hover {
     background-color: var(--bg-primary);
     cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--bg-primary);
   }
 }
 

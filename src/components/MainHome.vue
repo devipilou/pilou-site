@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 import HomeItem from './HomeItem.vue'
 import IconWrapper from './IconWrapper.vue'
 </script>
@@ -9,8 +10,12 @@ import IconWrapper from './IconWrapper.vue'
             <IconWrapper icon-name="about" />
         </template>
         <template #heading>About</template>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi error doloribus, autem cum esse natus odio?
-        Soluta nihil harum necessitatibus aliquid assumenda explicabo neque aliquam quaerat iste, atque accusamus delectus.
+        <template #content>
+            <p>Web Developper - Vuejs Nodejs JS/TS</p>
+            <p>Former Military-band Horn player reconverted</p>
+            <p>Creative/Constructive/Curious</p>
+        </template>
+
     </HomeItem>
 
     <HomeItem>
@@ -18,8 +23,18 @@ import IconWrapper from './IconWrapper.vue'
             <IconWrapper icon-name="projects" />
         </template>
         <template #heading>Projects</template>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis totam sit aliquam quis asperiores aspernatur
-        assumenda culpa? Animi odit reiciendis, cumque, enim ducimus aut reprehenderit saepe, quasi autem inventore rerum.
+        <template #content>
+            <p>This new personnal <a href="#">website</a>. Made with Vuejs Vue-router and Typescript.
+                <a href="https://github.com/devipilou/pilou-site"><small>Github</small></a>
+            </p>
+            <p>My former <a href="https://devipilou.github.io/pilou_art/">art gallery</a>. Made in HTML SCSS and native JS
+                <a href="https://github.com/devipilou/pilou_art"><small>Github</small></a>
+            </p>
+            <p>My former <a href="https://devipilou.github.io/portfolio/">website</a>. Made with HTLM CSS and Bootstrap
+                theme, with two hidden js games.
+                <a href="https://github.com/devipilou/portfolio"><small>Github</small></a>
+            </p>
+        </template>
     </HomeItem>
 
     <HomeItem>
@@ -27,8 +42,12 @@ import IconWrapper from './IconWrapper.vue'
             <IconWrapper icon-name="resume" />
         </template>
         <template #heading>Résumé</template>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto dolore a culpa provident, nisi iure fuga neque
-        repellendus sint vitae molestiae tempore! Nihil eligendi expedita assumenda! Quis, voluptatibus odit.
+        <template #content>
+            <p>Front: VueJs Typescript Html5 Css/Sass/Scss Tailwind</p>
+            <p>Back: Nodejs Laravel Php MySql</p>
+            <p>Cross Skills: GHA Cypress Vitest GraphQl</p>
+            <p>Soft Skills: Autonomy Initiatives-taking Organization Adaptability</p>
+        </template>
     </HomeItem>
 
     <HomeItem>
@@ -36,7 +55,27 @@ import IconWrapper from './IconWrapper.vue'
             <IconWrapper icon-name="contact" />
         </template>
         <template #heading>Contact</template>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis harum architecto, et nihil voluptas adipisci numquam
-        nulla exercitationem quidem temporibus tempora magnam quia molestias iste deleniti nisi culpa enim officiis.
+        <template #content>
+            <div class="contact__wrapper">
+                <div class="contact__text">
+                    <p>You like my projects? You're interested by my profile or my skills?</p>
+                    <p>Don't hesitate any longer:</p>
+                </div>
+                <RouterLink to="/contact" class="contact__button">
+                    <button>Contact me</button>
+                </RouterLink>
+            </div>
+        </template>
     </HomeItem>
 </template>
+
+<style scoped>
+.contact__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.contact__text {
+    margin-right: 1rem;
+}
+</style>
