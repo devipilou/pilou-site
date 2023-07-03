@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 import HeaderContent from './HeaderContent.vue'
+import ThemeToggle from './ThemeToggle.vue';
 </script>
 
 <template>
     <header>
+        <ThemeToggle class="theme_toggle" />
         <RouterLink to="/" class="logo-wrapper">
             <img alt="Pilou Dev logo" class="logo" src="@/assets/LogoPilouDev.png" width="200" height="200" />
         </RouterLink>
@@ -40,6 +42,10 @@ header {
     display: block;
     margin: 0 auto 1rem;
     cursor: pointer;
+}
+
+.theme_toggle {
+    align-self: start;
 }
 
 nav {
@@ -78,6 +84,11 @@ nav a:first-of-type {
     .logo {
         margin: 1.5rem;
     }
+
+    .theme_toggle {
+        align-self: center;
+    }
+
 
     header .wrapper {
         display: flex;

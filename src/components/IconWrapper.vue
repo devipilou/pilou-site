@@ -53,6 +53,7 @@ i {
     place-content: center;
     width: 32px;
     height: 32px;
+
 }
 
 @media (min-width: 1024px) {
@@ -61,7 +62,7 @@ i {
         left: -26px;
         position: absolute;
         border: 1px solid var(--color-border);
-        background: var(--color-background);
+        background: transparent;
         border-radius: 0.5rem;
         width: 50px;
         height: 50px;
