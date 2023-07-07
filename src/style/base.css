@@ -1,31 +1,33 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+  --white: #ffffff;
+  --white-soft: #f8f8f8;
+  --white-mute: #f2f2f2;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  --black: #181818;
+  --black-soft: #222222;
+  --black-mute: #282828;
 
   --turquoise: hsla(180, 100%, 37%, 1);
   --peach: hsla(30, 100%, 73%, 1);
 
+  --soft-turquoise: hsla(180, 100%, 37%, 0.3);
+  --soft-peach: hsla(30, 100%, 73%, 0.3);
   --mute-turquoise: hsla(180, 100%, 37%, 0.15);
   --mute-peach: hsla(30, 100%, 73%, 0.15);
 
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+  --divider-light-1: var(--soft-turquoise);
+  --divider-light-2: var(--mute-turquoise);
+  --divider-dark-1: var(--soft-peach);
+  --divider-dark-2: var(--mute-peach);
 
-  --vt-c-text-light-1: var(--vt-c-black-mute);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white-mute);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --text-light-1: var(--black-mute);
+  --text-light-2: rgba(60, 60, 60, 0.66);
+  --text-dark-1: var(--white-mute);
+  --text-dark-2: rgba(235, 235, 235, 0.64);
 }
 
-/* semantic color variables for this project */
+/* semantic color variables for dark theme (default theme)*/
 :root {
   --primary: var(--turquoise);
   --secondary: var(--peach);
@@ -33,15 +35,15 @@
   --bg-primary: var(--mute-turquoise);
   --bg-secondary: var(--mute-peach);
 
-  --color-background: var(--vt-c-black);
-  --color-background-soft: var(--vt-c-black-soft);
-  --color-background-mute: var(--vt-c-black-mute);
+  --color-background: var(--black);
+  --color-background-soft: var(--black-soft);
+  --color-background-mute: var(--black-mute);
 
-  --color-border: var(--vt-c-divider-dark-2);
-  --color-border-hover: var(--vt-c-divider-dark-1);
+  --color-border: var(--divider-dark-2);
+  --color-border-hover: var(--divider-dark-1);
 
-  --color-heading: var(--vt-c-text-dark-1);
-  --color-text: var(--vt-c-text-dark-2);
+  --color-heading: var(--text-dark-1);
+  --color-text: var(--text-dark-2);
 
   --section-gap: 160px;
 }

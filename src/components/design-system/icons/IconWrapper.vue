@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
+import DocumentationIcon from './IconDocumentation.vue'
+import ToolingIcon from './IconTooling.vue'
+import CommunityIcon from './IconCommunity.vue'
+import SupportIcon from './IconSupport.vue'
 import router from '@/router'
 
 interface Props {

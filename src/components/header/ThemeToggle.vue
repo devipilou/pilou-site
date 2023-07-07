@@ -2,7 +2,7 @@
     <button @click="lightThemeSwitch">{{ switchMessage }}</button>
 </template>
 <script lang="ts">
-import themeChanger from "../utils/theme";
+import themeChanger from "../../utils/theme";
 export default {
     name: "ThemeToggle",
     data() {

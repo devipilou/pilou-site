@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import router from '@/router'
 import HomeItem from './HomeItem.vue'
-import IconWrapper from './IconWrapper.vue'
+import IconWrapper from '../design-system/'
 function onButtonClick() {
     router.push("/contact")
 }
