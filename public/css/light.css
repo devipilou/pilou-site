@@ -1,9 +1,9 @@
 :root {
-  --primary: var(--blue);
-  --secondary: var(--yellow);
+  --primary: var(--turquoise);
+  --secondary: var(--peach);
 
-  --bg-primary: var(--mute-blue);
-  --bg-secondary: var(--mute-yellow);
+  --bg-primary: var(--mute-turquoise);
+  --bg-secondary: var(--mute-peach);
 
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);

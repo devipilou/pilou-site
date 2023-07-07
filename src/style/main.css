@@ -31,10 +31,16 @@ body {
 }
 
 a,
-.blue,
-.icon {
+.turquoise {
   text-decoration: none;
   color: var(--primary);
+  transition: 0.3s;
+}
+
+.icon,
+.peach {
+  text-decoration: none;
+  color: var(--secondary);
   transition: 0.3s;
 }
 
@@ -48,12 +54,12 @@ button {
 }
 
 @media (hover: hover) {
-  a:hover:not(has(button)) {
+  a:hover {
     background-color: var(--bg-primary);
   }
 
   .icon:hover {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-secondary);
     cursor: pointer;
   }
 

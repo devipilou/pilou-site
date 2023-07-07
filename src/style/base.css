@@ -8,13 +8,11 @@
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
 
-  --blue: hsla(197, 100%, 37%, 1);
-  --yellow: hsla(37, 91%, 55%, 1);
-  --light-yellow: hsla(37, 91%, 61%, 1);
+  --turquoise: hsla(180, 100%, 37%, 1);
+  --peach: hsla(30, 100%, 73%, 1);
 
-  --mute-blue: hsla(197, 100%, 43%, 0.15);
-  --mute-yellow: hsla(37, 91%, 55%, 0.15);
-  --mute-light-yellow: hsla(37, 91%, 61%, 0.15);
+  --mute-turquoise: hsla(180, 100%, 37%, 0.15);
+  --mute-peach: hsla(30, 100%, 73%, 0.15);
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
@@ -29,11 +27,11 @@
 
 /* semantic color variables for this project */
 :root {
-  --primary: var(--blue);
-  --secondary: var(--light-yellow);
+  --primary: var(--turquoise);
+  --secondary: var(--peach);
 
-  --bg-primary: var(--mute-blue);
-  --bg-secondary: var(--mute-light-yellow);
+  --bg-primary: var(--mute-turquoise);
+  --bg-secondary: var(--mute-peach);
 
   --color-background: var(--vt-c-black);
   --color-background-soft: var(--vt-c-black-soft);

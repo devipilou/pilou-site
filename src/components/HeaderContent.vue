@@ -3,7 +3,7 @@
 
 <template>
     <div class="greetings">
-        <h1 class="blue">Web Developer</h1>
+        <h1 class="turquoise">Web Developer</h1>
         <h3>
             Homepage of Pierre-Loup Perez
             <br />

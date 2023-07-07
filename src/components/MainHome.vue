@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+import router from '@/router'
 import HomeItem from './HomeItem.vue'
 import IconWrapper from './IconWrapper.vue'
+function onButtonClick() {
+    router.push("/contact")
+}
 </script>
 
 <template>
@@ -61,9 +64,7 @@ import IconWrapper from './IconWrapper.vue'
                     <p>You like my projects? You're interested by my profile or my skills?</p>
                     <p>Don't hesitate any longer:</p>
                 </div>
-                <RouterLink to="/contact" class="contact__button">
-                    <button>Contact me</button>
-                </RouterLink>
+                <button class="contact__button" @click="onButtonClick">Contact me</button>
             </div>
         </template>
     </HomeItem>
