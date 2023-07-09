@@ -8,7 +8,7 @@ import TopBar from './components/header/TopBar.vue';
     <TopBar />
     <MainHeader />
 
-    <RouterView />
+    <RouterView class="app-page" />
 </template>
 
 <style scoped></style>

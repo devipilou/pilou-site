@@ -56,17 +56,13 @@ i {
 
 }
 
-@media (min-width: 1024px) {
-    i {
-        top: calc(50% - 25px);
-        left: -26px;
-        position: absolute;
+@media (min-width : 1024px) {
+    .icon {
         border: 1px solid var(--color-border);
         background: transparent;
         border-radius: 0.5rem;
         width: 50px;
         height: 50px;
     }
-
 }
 </style>

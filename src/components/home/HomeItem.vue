@@ -1,8 +1,13 @@
+<script setup lang="ts">
+import { width } from '../../utils/useBreakpoints'
+</script>
+
 <template>
     <div class="item">
-        <slot name="icon"></slot>
+        <slot v-if="width > 1024" name="icon"></slot>
         <div class="details">
             <h3>
+                <slot v-if="width <= 1024" name="icon" class="home-icon"></slot>
                 <slot name="heading"></slot>
             </h3>
             <slot name="content"></slot>
@@ -12,9 +17,8 @@
 
 <style scoped>
 .item {
-    margin-top: 2rem;
     display: flex;
-    position: relative;
+    align-items: center;
 }
 
 .details {
@@ -23,6 +27,8 @@
 }
 
 h3 {
+    display: flex;
+    gap: 0.5rem;
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 0.4rem;
@@ -31,34 +37,7 @@ h3 {
 
 @media (min-width: 1024px) {
     .item {
-        margin-top: 0;
-        padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
-    }
-
-    .item:before {
-        content: ' ';
-        border-left: 1px solid var(--color-border);
-        position: absolute;
-        left: 0;
-        bottom: calc(50% + 25px);
-        height: calc(50% - 25px);
-    }
-
-    .item:after {
-        content: ' ';
-        border-left: 1px solid var(--color-border);
-        position: absolute;
-        left: 0;
-        top: calc(50% + 25px);
-        height: calc(50% - 25px);
-    }
-
-    .item:first-of-type:before {
-        display: none;
-    }
-
-    .item:last-of-type:after {
-        display: none;
+        gap: 2rem;
     }
 }
 </style>

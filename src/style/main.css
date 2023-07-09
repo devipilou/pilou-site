@@ -30,6 +30,12 @@ body {
   font-weight: normal;
 }
 
+.app-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 h1 {
   color: var(--primary);
 }
@@ -67,5 +73,11 @@ button {
 
   button:hover {
     background-color: var(--bg-primary);
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-page {
+    padding: 2rem;
   }
 }
