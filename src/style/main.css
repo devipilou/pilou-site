@@ -47,7 +47,6 @@ a {
 }
 
 button {
-  min-height: 50px;
   padding: 1rem;
   border: solid 1px var(--color-border);
   border-radius: 0.5rem;
@@ -68,17 +67,5 @@ button {
 
   button:hover {
     background-color: var(--bg-primary);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: flex;
-    padding: 0 2rem;
   }
 }
