@@ -1,31 +1,26 @@
-<template>
-    <button @click="lightThemeSwitch">{{ switchMessage }}</button>
-</template>
-<script lang="ts">
+<script setup lang="ts">
+import { computed } from 'vue';
 import themeChanger from "../../utils/theme";
-export default {
-    name: "ThemeToggle",
-    data() {
-        return {
-            themeChanger: new themeChanger(false),
-        };
-    },
-    computed: {
-        switchMessage() {
-            // @ts-ignore
-            return this.themeChanger._isLightTheme() ? 'Dark theme' : 'Light theme';
-        }
-    },
-    methods: {
-        lightThemeSwitch() {
-            // @ts-ignore
-            this.themeChanger._lightThemeSwitch();
-        },
-    },
+
+const changer = new themeChanger(false);
+
+
+const switchMessage = computed(() => {
+  return changer._isLightTheme() ? 'Dark theme' : 'Light theme';
+});
+
+function lightThemeSwitch() {
+  changer._lightThemeSwitch();
 };
+
 </script>
+
+<template>
+  <button @click="lightThemeSwitch">{{ switchMessage }}</button>
+</template>
+
 <style scoped>
 button {
-    font-size: 12px;
+  font-size: 12px;
 }
 </style>
