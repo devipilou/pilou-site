@@ -2,30 +2,23 @@
 </script>
 
 <template>
-    <div class="greetings">
-        <h1>Web Developer</h1>
-        <h3>
-            Homepage of Pierre-Loup Perez
-            <br />
-            Vuejs Javascript/Typescript Nodejs
-        </h3>
-    </div>
+  <div>
+    <h1 class="header-title">Web Developer</h1>
+    <p class="header-content">
+      Homepage of Pierre-Loup Perez
+      <br />
+      Vuejs Nuxt Nodejs Javascript/Typescript
+    </p>
+  </div>
 </template>
 
 <style scoped>
-h1 {
-    font-weight: 500;
-    font-size: 2.6rem;
-    position: relative;
-    top: -10px;
+.header-content {
+  font-size: 1.2rem;
 }
 
-h3 {
-    font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-    text-align: center;
+.header-title,
+.header-content {
+  text-align: center;
 }
 </style>
