@@ -1,10 +1,10 @@
 /* semantic color for light theme */
 :root {
-  --primary: var(--turquoise);
-  --secondary: var(--peach);
+  --primary: var(--blue);
+  --secondary: var(--yellow);
 
-  --bg-primary: var(--mute-turquoise);
-  --bg-secondary: var(--mute-peach);
+  --bg-primary: var(--mute-blue);
+  --bg-secondary: var(--mute-yellow);
 
   --color-background: var(--white);
   --color-background-soft: var(--white-soft);

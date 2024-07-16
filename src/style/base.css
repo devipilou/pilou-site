@@ -1,4 +1,3 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
   --white: #ffffff;
   --white-soft: #f8f8f8;
@@ -8,18 +7,18 @@
   --black-soft: #222222;
   --black-mute: #282828;
 
-  --turquoise: hsla(180, 100%, 37%, 1);
-  --peach: hsla(30, 100%, 73%, 1);
+  --blue: hsla(200, 79%, 50%, 1);
+  --yellow: hsla(48, 89%, 50%, 1);
 
-  --soft-turquoise: hsla(180, 100%, 37%, 0.3);
-  --soft-peach: hsla(30, 100%, 73%, 0.3);
-  --mute-turquoise: hsla(180, 100%, 37%, 0.15);
-  --mute-peach: hsla(30, 100%, 73%, 0.15);
+  --soft-blue: hsla(200, 79%, 50%, 0.3);
+  --soft-yellow: hsla(48, 89%, 50%, 0.3);
+  --mute-blue: hsla(200, 79%, 50%, 0.15);
+  --mute-yellow: hsla(48, 89%, 50%, 0.15);
 
-  --divider-light-1: var(--soft-turquoise);
-  --divider-light-2: var(--mute-turquoise);
-  --divider-dark-1: var(--soft-peach);
-  --divider-dark-2: var(--mute-peach);
+  --divider-light-1: var(--soft-blue);
+  --divider-light-2: var(--mute-blue);
+  --divider-dark-1: var(--soft-yellow);
+  --divider-dark-2: var(--mute-yellow);
 
   --text-light-1: var(--black-mute);
   --text-light-2: rgba(60, 60, 60, 0.66);
@@ -27,13 +26,12 @@
   --text-dark-2: rgba(235, 235, 235, 0.64);
 }
 
-/* semantic color variables for dark theme (default theme)*/
 :root {
-  --primary: var(--turquoise);
-  --secondary: var(--peach);
+  --primary: var(--blue);
+  --secondary: var(--yellow);
 
-  --bg-primary: var(--mute-turquoise);
-  --bg-secondary: var(--mute-peach);
+  --bg-primary: var(--mute-blue);
+  --bg-secondary: var(--mute-yellow);
 
   --color-background: var(--black);
   --color-background-soft: var(--black-soft);
