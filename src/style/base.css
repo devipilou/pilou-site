@@ -7,13 +7,13 @@
   --black-soft: #222222;
   --black-mute: #282828;
 
-  --blue: hsla(200, 79%, 50%, 1);
-  --yellow: hsla(48, 89%, 50%, 1);
+  --blue: hsla(208, 90%, 52%, 1);
+  --yellow: hsla(50, 90%, 50%, 1);
 
-  --soft-blue: hsla(200, 79%, 50%, 0.3);
-  --soft-yellow: hsla(48, 89%, 50%, 0.3);
-  --mute-blue: hsla(200, 79%, 50%, 0.15);
-  --mute-yellow: hsla(48, 89%, 50%, 0.15);
+  --soft-blue: hsla(208, 90%, 52%, 0.3);
+  --soft-yellow: hsla(50, 90%, 50%, 0.3);
+  --mute-blue: hsla(208, 90%, 52%, 0.15);
+  --mute-yellow: hsla(50, 90%, 50%, 0.15);
 
   --divider-light-1: var(--soft-blue);
   --divider-light-2: var(--mute-blue);
