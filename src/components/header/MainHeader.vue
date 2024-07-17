@@ -31,6 +31,7 @@ header {
   line-height: 1.5;
   max-height: 100vh;
   min-width: 30rem;
+  margin-bottom: 1rem;
 }
 
 .logo-wrapper {
@@ -39,7 +40,7 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   cursor: pointer;
 }
 

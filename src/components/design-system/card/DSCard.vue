@@ -25,7 +25,8 @@ const props = withDefaults(defineProps<Props>(), {
   align-items: center;
   border: solid var(--primary) 1px;
   border-radius: 0.5rem;
-  background-color: var(--color-background-soft)
+  background-color: var(--color-background-soft);
+  box-shadow: 0px 0px 10px 1px var(--primary);
 }
 
 .card-title {
