@@ -1,23 +1,27 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 import HeaderContent from './HeaderContent.vue'
+import TopBar from './TopBar.vue';
 </script>
 
 <template>
   <header>
-    <RouterLink to="/" class="logo-wrapper">
-      <img alt="Pilou Dev logo" class="logo" src="@/assets/LogoPilouDev.png" width="200" height="200" />
-    </RouterLink>
-    <div class="wrapper">
-      <HeaderContent />
+    <TopBar />
+    <div>
+      <RouterLink to="/" class="logo-wrapper">
+        <img alt="Pilou Dev logo" class="logo" src="@/assets/LogoPilouDev.png" width="200" height="200" />
+      </RouterLink>
+      <div class="wrapper">
+        <HeaderContent />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/projects">Projects</RouterLink>
-        <RouterLink to="/resume">Résumé</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
-      </nav>
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/projects">Projects</RouterLink>
+          <RouterLink to="/resume">Résumé</RouterLink>
+          <RouterLink to="/contact">Contact</RouterLink>
+        </nav>
+      </div>
     </div>
 
   </header>
@@ -26,6 +30,7 @@ import HeaderContent from './HeaderContent.vue'
 <style scoped>
 header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   line-height: 1.5;
